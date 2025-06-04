@@ -1,5 +1,5 @@
 import PageBreadcrumb from "@/components/common/PageBreadCrumb";
-import DoctorAlertsPage from "@/components/notification";
+import CreatePrescriptionForm from "@/components/prescription";
 import { Metadata } from "next";
 import React from "react";
 
@@ -11,9 +11,8 @@ export const metadata: Metadata = {
 export default function BlankPage() {
   return (
     <div>
-      <PageBreadcrumb pageTitle="Patient Alerts" />
       <div className="space-y-6">
-       <DoctorAlertsPage/>
+       <CreatePrescriptionForm/>
        </div>
     </div>
   );
